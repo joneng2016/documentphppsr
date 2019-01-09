@@ -1,0 +1,18 @@
+Basic Coding Standard
+
+Deve usar apenas <?php ou <?= 
+
+Deve usar apenas UTF-8 sem BOM para PHP code
+
+A estrutura de código deve ser ou procedural ou em termos de classes, funções, mas
+nunca ambos
+
+NameSpaces devem estar condicionados a PSR-0, PSR-4
+
+As classes devem ser declaradas apenas em StudlyCapes
+
+As classes constantes devem ser decladaras em upper case com separdores
+
+Os métodos devem ser declarados em camelCase
+
+
