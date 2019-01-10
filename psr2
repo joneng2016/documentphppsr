@@ -1,0 +1,21 @@
+Código deve seguir o estilo do código definido na PSR-1
+
+A identação do TAB deve ser de quatro caracteres
+
+Não deve haver um limite rígido para o tamanho da linha; um limite flexível deve ser de 120 caracteres por linha ao máximo e de 80 ao mínimo. 
+
+Deve haver uma linha em branco após o namespace e o mesmo deve ocorrer depois do termo use. 
+
+Na declaração de uma classe, a chave "{" deve ser aberta na próxima linha e deve ser fechada "}" na próxima linha após o término do código. 
+
+Na declaração de uma função, a chave "{" deve ser aberta na próxima linha e deve ser fechada "}" na próxima linha após o término do código. 
+
+Visibilidade deve ser declarada em todas as propriedaes e métodos; sendo que abstract e final devem ser declarados antes da visibilidade e static deve ser
+declarado depois da visibilidade. 
+
+Estruturas de controle das palavras chaves devem ter um espaço após eles, contudo métodos e funções não. 
+
+As estruturas de controle devem ter a chave "{" aberta na mesma linha e devem ser encerradas na próxima linha após a finalização do corpo do código.
+
+Abrir { para as estruturas de controle não devem ter espaço depois delas, e o fechamento "}" das estruturas de controle não deve ter espaço antes.
+
