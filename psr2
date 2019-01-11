@@ -1,9 +1,10 @@
+Resumo
+
 Código deve seguir o estilo do código definido na PSR-1
 
 A identação do TAB deve ser de quatro caracteres
 
-Não deve haver um limite rígido para o tamanho da linha; um limite flexível deve ser de 120 caracteres por linha ao máximo e de 80 ao mínimo. 
-
+Não deve haver um limite rígido para o tamanho da linha; um limite flexível deve ser de 120 caracteres por linha.
 Deve haver uma linha em branco após o namespace e o mesmo deve ocorrer depois do termo use. 
 
 Na declaração de uma classe, a chave "{" deve ser aberta na próxima linha e deve ser fechada "}" na próxima linha após o término do código. 
@@ -18,4 +19,36 @@ Estruturas de controle das palavras chaves devem ter um espaço após eles, cont
 As estruturas de controle devem ter a chave "{" aberta na mesma linha e devem ser encerradas na próxima linha após a finalização do corpo do código.
 
 Abrir { para as estruturas de controle não devem ter espaço depois delas, e o fechamento "}" das estruturas de controle não deve ter espaço antes.
+
+
+Geral
+
+
+Todos os arquivos PHP devem user Unix LF no final da linha
+
+Todos os arquivos php devem ser finalizados com uma linha em branco
+
+A tag de fechamento ?> deve ser omitida no final do código PHP
+
+Não há limite rigoroso para o tamanho da linha
+
+
+É bom que a linha não tenha um número de caracter superior a 80, mas não deve passar de 120.
+
+Nãod deve haver espaço em branco a direita. 
+
+Linhas em branco devem ser postas apenas para melhorar a leitura de definir blocos de código. 
+
+Não deve haver mais do que uma declaração por linha.
+
+Identação
+
+O código deve usar uma identação de 4 caracteres, não deve usar TAB para identação.
+
+Os termos chaves, em PHP, deve estar em minusculo.
+
+As constantes PHP true,false e null deve estar em minusculo.
+
+
+
 
