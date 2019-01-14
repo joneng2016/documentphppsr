@@ -50,5 +50,21 @@ Os termos chaves, em PHP, deve estar em minusculo.
 As constantes PHP true,false e null deve estar em minusculo.
 
 
+3 Namespace e Use Declarations
+
+Quando presente, deve haver uma linha em branco após o namespace.
+
+Quando presente, todos os use deve ocorrer após as declarações de namespace.
+
+Deve ocorrer apenas uma palavra chave de use por declaração. 
+
+Deve haver apenas uma linha em banco depois do bloco onde use estiver.
+
+
+4 Classes, Propriedades e Métodos
+
+Os termos extends e implements devem ser declarados na mesma linha em conjunto com o nome da classe.
+
+A abertura da chave "{" deve acontecer em sua própria linha e o fechamento do "}" deve acontecer na linha posterior ao corpo do código.
 
 
