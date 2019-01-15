@@ -67,4 +67,18 @@ Os termos extends e implements devem ser declarados na mesma linha em conjunto c
 
 A abertura da chave "{" deve acontecer em sua própria linha e o fechamento do "}" deve acontecer na linha posterior ao corpo do código.
 
+A lista de implements pode ser dividida em através de multiplas linhas, onde cada uma é identificada apenas uma vez. Quando fazemos isso, o primeiro item da lista deve
+estar na próxima linhal e deve ter apenas uma interface por linha. 
 
+A visibilidade deve ser declarada com todas as suas propriedades.
+
+O termo var nunca deve ser usado ao declarar uma propriedade. 
+
+O nome das propriedades não devem ser prefixados com um único sublinhado para indicar a visibilidade de ser protegida ou privada. 
+
+Visibilidade deve ser declarada em todos os métodos. 
+
+O nome do método não deve ser declarado com um único sublinhado para indicar se é protegido ou privado. 
+
+O nome do método não deve ser declarado com espaço depois dos métodos. A abertura de { deve ocorrer em sua própria linha e o fechamento de } deve ocorrer na linha 
+ao término do corpo do código. Não deve haver espaço depois de abrir { e o mesmo ocorre para o fechamento de }. 
