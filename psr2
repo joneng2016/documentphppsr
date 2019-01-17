@@ -82,3 +82,14 @@ O nome do método não deve ser declarado com um único sublinhado para indicar 
 
 O nome do método não deve ser declarado com espaço depois dos métodos. A abertura de { deve ocorrer em sua própria linha e o fechamento de } deve ocorrer na linha 
 ao término do corpo do código. Não deve haver espaço depois de abrir { e o mesmo ocorre para o fechamento de }. 
+
+
+Na lista de argumentos, não deve haver espaço antes de cada virgula, deve haver um espaço antes de cada virgula. 
+
+Os argumentos dos métodos que definem com valor padrão devem ser posicionados sempre no final.
+
+A lista de argumentos deve ser divida através de multiplas linhas, onde cada linha subsequente é identada de uma só vez Quando você faz isso, o primeiro item na lista
+deve estar na próxima linha, e deve haver apenas um argumento por linha.
+
+Quando a lista de argumentos for divida por meio de multiplas linhas, o fechamento de parentesis e a abertura deve ser feita juntos as suas próprias linhas com ao menos
+um espaço entre elas. 
