@@ -93,3 +93,28 @@ deve estar na próxima linha, e deve haver apenas um argumento por linha.
 
 Quando a lista de argumentos for divida por meio de multiplas linhas, o fechamento de parentesis e a abertura deve ser feita juntos as suas próprias linhas com ao menos
 um espaço entre elas. 
+
+Quando presente, os termos abstract e final devem preceder a declaração da visibilidade.
+
+Quando presente, o termo static deve ocorrer depois da declaração da visibilidade.
+
+Quando se faz a chamada de um método ou de uma função, não há espaço entre o nome do método ou da função e não deve haver espaço entre as aberturas de controle, não deve haver espaço 
+no fechamento de parenteses. Na lista de argumentos a seguir, não deve haver espaço antes de cada virgula e depois deve haver o espaço depois de cada virgula.
+<?php 
+bar();
+$foo->bar($arg1);
+Foo::bar($arg1, arg2);
+
+Os argumentos em lista devem ser quebrados em multiplas linhas, onde cada linha é independente da outra. Quando isso é feito, o primeiro item da lista deve ser a próxima linha, e deve haver 
+apenas um argumento por linha
+
+<?php
+$foo->bar(
+    $longArgument,
+    $longerArgument,
+    $muchLongerArgument
+);
+
+
+
+
