@@ -117,4 +117,19 @@ $foo->bar(
 
 
 
+5 Estruturas de Controle 
+
+Normalmente as estruturas de controle são definidas por: 
+
+Deve haver apenas um espaço depois da tecla da estrutura de controle
+
+Não deve haver espaço depois da abertura dos parenteses 
+
+Não deve haver espaço antes do fechamento dos parenteses 
+
+Deve haver um espaço entre o fechamento dos parenteses e sua respectiva abertura. 
+
+A estrutura do corpo deve estar identada uma vez
+
+O fechamento do braço deve ocorrer na próxima linha depois do corpo. 
 
