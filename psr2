@@ -133,3 +133,14 @@ A estrutura do corpo deve estar identada uma vez
 
 O fechamento do braço deve ocorrer na próxima linha depois do corpo. 
 
+5.1 
+
+OS ifs devem ter a estrutura que se segue. Observe que os parenteses, espaçoes e os braços, e else e elseif estão na mesma linha tanto quanto o fechamento do ramo que o colchete no início 
+do corpo.
+
+O termo elseif deve ser usado em vez de else if, pois todos os controles, neste caso, devem ser palavras isoladas.
+
+5.2 
+
+A estrutura switch deve ser como que se segue na figura. Observe a colocação dos parenteses, espaços e colchetes. A declaração do  "case" deve ser indentada uma só vez no switch, e o "break" possui a palavra chave
+que deve ser identada no mesmo nível que o corpo do case. Quando um corpo de caso não vazio ocorrer em conjunto com um fall-through, então deve ter um comentário com // de no break.
