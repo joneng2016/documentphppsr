@@ -138,9 +138,90 @@ O fechamento do braço deve ocorrer na próxima linha depois do corpo.
 OS ifs devem ter a estrutura que se segue. Observe que os parenteses, espaçoes e os braços, e else e elseif estão na mesma linha tanto quanto o fechamento do ramo que o colchete no início 
 do corpo.
 
+
+<?php
+if ($expr1) {
+    // if body
+} elseif ($expr2) {
+    // elseif body
+} else {
+    // else body;
+}
+
 O termo elseif deve ser usado em vez de else if, pois todos os controles, neste caso, devem ser palavras isoladas.
 
 5.2 
 
 A estrutura switch deve ser como que se segue na figura. Observe a colocação dos parenteses, espaços e colchetes. A declaração do  "case" deve ser indentada uma só vez no switch, e o "break" possui a palavra chave
 que deve ser identada no mesmo nível que o corpo do case. Quando um corpo de caso não vazio ocorrer em conjunto com um fall-through, então deve ter um comentário com // de no break.
+
+
+<?php
+switch ($expr) {
+    case 0:
+        echo 'First case, with a break';
+        break;
+    case 1:
+        echo 'Second case, which falls through';
+        // no break
+    case 2:
+    case 3:
+    case 4:
+        echo 'Third case, return instead of break';
+        return;
+    default:
+        echo 'Default case';
+        break;
+}
+
+
+5.3 
+
+Um "while" deve ser similiar a estrutura que se segue
+
+<?php
+while ($expr) {
+    // structure body
+}
+
+Observe os parenteses, espaços e colchetes. Similar a essa situação, o do while deve ser similiar ao que se segue. Observe como se dá os parenteses, espaços e colchetes.
+
+<? php
+do {
+    // structure body
+}
+while($expr);
+
+
+5.4 for
+A for é uma declaração similar a que se segue.
+
+<?php
+for ($i = 0; $i < 10; $i++) {
+    // for body
+}
+
+5.5 foreach
+
+<?php
+foreach ($iterable as $key => $value) {
+    // foreach body
+}
+
+5.6 try, catch
+
+O bloco de try catch tem uma estrutura como a que se segue. 
+
+<?php
+try {
+    // try body
+} catch (FirstExceptionType $e) {
+    // catch body
+} catch (OtherExceptionType $e) {
+    // catch body
+}
+
+
+
+
+
