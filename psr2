@@ -222,6 +222,75 @@ try {
 }
 
 
+6 Closures (Fechamentos)
 
+Os Closures devem ser declarados depois do termo function, e com um espaço antes e depois do termo use. 
+O colchetes deve ser aberto na mesma linha e fechado na próxima linha em relação ao corpo do código. 
 
+Não deve haver espaço aberto antes da abertura dos parenteses em relação a lista de um argumento ou variaveis, e não
+deve haver espaço antes do fechamento dos argumentos ou das listas de variáveis. 
+
+Na lista de argumentos e variáveis, não deve haver um espaço em branco em cada vírgula, e deve haver um espaço depois de cada vírgula. 
+Os argumentos que tiverem valores padrões devem ir para o final da lista de argumentos. 
+
+Um closure deve ser declarado da seguinte maneira;
+
+<?php
+$closureWithArgs = function ($arg1, $arg2) {
+    // body
+};
+
+$closureWithArgsAndVars = function ($arg1, $arg2) use ($var1, $var2) {
+    // body
+};
+
+A lista de argumentos e variaveis podem ser cuspidos através de multiplas linhas, onde cada linha subsequentemente é identada vez após vez. 
+Quando isso é feito, o primeiro item deve ser posicionado na próxima linha, e deve ter apenas um argumento por linha.
+
+Quando no fim da linha (se for argumentos ou variáveis), isso pode ser posicionado por meio de multiplas linhas, onde os o fechamento dos parentesesis
+e a abertura dos colchetes devem estar juntos na própria linha com espaço entre elas. A seguir exemplos disso. 
+<?php
+$longArgs_noVars = function (
+    $longArgument,
+    $longerArgument,
+    $muchLongerArgument
+) {
+    // body
+};
+
+$noArgs_longVars = function () use (
+    $longVar1,
+    $longerVar2,
+    $muchLongerVar3
+) {
+    // body
+};
+
+$longArgs_longVars = function (
+    $longArgument,
+    $longerArgument,
+    $muchLongerArgument
+) use (
+    $longVar1,
+    $longerVar2,
+    $muchLongerVar3
+) {
+    // body
+};
+
+$longArgs_shortVars = function (
+    $longArgument,
+    $longerArgument,
+    $muchLongerArgument
+) use ($var1) {
+    // body
+};
+
+$shortArgs_longVars = function ($arg) use (
+    $longVar1,
+    $longerVar2,
+    $muchLongerVar3
+) {
+    // body
+};
 
