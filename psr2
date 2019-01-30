@@ -294,3 +294,16 @@ $shortArgs_longVars = function ($arg) use (
     // body
 };
 
+7 Conclusão
+
+Existe muitos elementos de estilos e práticas intencionais omitidas por esse guia. Isso inclui mas não se limita a;
+
+> Declarações de variáveis globais e constantes globais.
+> Declarações de funções.
+> Operadores e tarefas.
+> Alinhamento inter-linear.
+> Comentar e blocos de documentos.
+> Prefixos e sufixos do nome da classe. 
+> Melhores práticas. 
+
+Futuras recomendações podem ser revisadas e extendidas nesse guia do endereço ou outros elementos do estilo e da prática. 
