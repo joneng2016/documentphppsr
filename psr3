@@ -1,0 +1,11 @@
+psr3 
+
+1 Especificação 
+
+1.1 Básicos
+
+A LoggerInterface expõem oite métodos para escrever os logos com base na nos 8 RFC 5424 níveis (debug, info, notice, warning, error, critical, alert, emergency). 
+
+O método 9 é o log, aceita um log no primeiro argumento. A chamada desse método com um nível constante deve ter o mesmo resultado como chamada de métodos para os níveis específicos. 
+A chamada desse método com um nível que não deve lançar um Psr\Log\InvalidArgumentException se a implementação não souber sobre o nível. Usar SHOULD NOT usa um nível de custo sem 
+saber para ao certo a a atual implementação que suporta isso. 
