@@ -7,5 +7,53 @@ psr3
 A LoggerInterface expõem oite métodos para escrever os logos com base na nos 8 RFC 5424 níveis (debug, info, notice, warning, error, critical, alert, emergency). 
 
 O método 9 é o log, aceita um log no primeiro argumento. A chamada desse método com um nível constante deve ter o mesmo resultado como chamada de métodos para os níveis específicos. 
-A chamada desse método com um nível que não deve lançar um Psr\Log\InvalidArgumentException se a implementação não souber sobre o nível. Usar SHOULD NOT usa um nível de custo sem 
-saber para ao certo a a atual implementação que suporta isso. 
+A chamada desse método com um nível que não deve lançar um Psr\Log\InvalidArgumentException se a implementação não souber sobre o nível. Usar SHOULD NOT usa um nível de custo sem saber para ao certo a a atual implementação que suporta isso. 
+
+1.2 Mensagem 
+
+Todo método aceita uma string como mensagem, ou um objeto com o método mágico __toString(). Os implementadores podem realizar uma dada manipulação para o passado dos objetos. Se não for o caso, a implementação deve lança-los 
+a uma string. 
+
+A mensagem pode conter placeholders cujos implementadores podem substituir com valor de um vetor de contexto.  
+
+O nome dos placeholders deve corresponder a chave no array de contexto. 
+
+Placehoders deve ser delimiados com uma simples abertura de { e um 
+fechamento de }. Não deve haver nenhum espaço em branco entre os delimitadores em que tenha o nome do placeholder. 
+
+O nome dos placeholders deve ser composto apenas por caracteres A-Z, a-z, 0-9, _, e . . O uso de outros caracteres está definido para futuras modificações na especificação dos placeholders. 
+Os implementadores podem usar placeholders para implementar vários escalonamentos estratégicos e apresentar os logs no monitor. Usuários não devem pre-escapar os valores do placeholder desde que eles não possam saber em qual contexto o dado seja impresso. 
+
+A seguir um exemplo de implementação de interpolação de placeholder sendo provido para finalidades de referências apenas; 
+
+
+<?php
+
+/**
+ * Interpolates context values into the message placeholders.
+ */
+function interpolate($message, array $context = array())
+{
+    // build a replacement array with braces around the context keys
+    $replace = array();
+    foreach ($context as $key => $val) {
+        // check that the value can be casted to string
+        if (!is_array($val) && (!is_object($val) || method_exists($val, '__toString'))) {
+            $replace['{' . $key . '}'] = $val;
+        }
+    }
+
+    // interpolate replacement values into the message and return
+    return strtr($message, $replace);
+}
+
+// a message with brace-delimited placeholder names
+$message = "User {username} created";
+
+// a context array of placeholder names => replacement values
+$context = array('username' => 'bolivar');
+
+// echoes "User bolivar created"
+echo interpolate($message, $context);
+
+
