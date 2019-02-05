@@ -56,4 +56,6 @@ $context = array('username' => 'bolivar');
 // echoes "User bolivar created"
 echo interpolate($message, $context);
 
-
+Todos os métodos aceitam um dado de contexto. Isso serve para guardar alguma informação estranha que não está na forma de uma string. Por exemplo, um array que contem algum a string. Implementação deve garantir que eles tratam contextos de dados tanto quanto leniências possíveis. Um valor dado em certo contexto não deve se jogado como uma exceção e nem deve ser levantado por algum tipo de erro no php.
+  
+Se um objeto de excecao é passado como contexto de dado, isso deve ser dado em uma chave de exception. O Loggin de uma exception é um padrão de projeto que permite implementadores para extrair uma pilha de vestígios das exceções quando o "log" do backend dá o devido suporte a isso. Implementadores devem verificar que a chave "exception" é atualmente uma Exception antes usando isso como tal, bem como isso pode conter alguma string. 
