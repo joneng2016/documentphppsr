@@ -59,3 +59,15 @@ echo interpolate($message, $context);
 Todos os métodos aceitam um dado de contexto. Isso serve para guardar alguma informação estranha que não está na forma de uma string. Por exemplo, um array que contem algum a string. Implementação deve garantir que eles tratam contextos de dados tanto quanto leniências possíveis. Um valor dado em certo contexto não deve se jogado como uma exceção e nem deve ser levantado por algum tipo de erro no php.
   
 Se um objeto de excecao é passado como contexto de dado, isso deve ser dado em uma chave de exception. O Loggin de uma exception é um padrão de projeto que permite implementadores para extrair uma pilha de vestígios das exceções quando o "log" do backend dá o devido suporte a isso. Implementadores devem verificar que a chave "exception" é atualmente uma Exception antes usando isso como tal, bem como isso pode conter alguma string. 
+
+1.4 Classes Helpers e Interfaces
+
+A classe Psr\Log\AbstractLogger permite implementar LoggerInterface muito facilmente através do método genérico log. Os outros oito métodos são encaminhando mensagens de contexto relacionado a isso. 
+
+Similarmente, o uso de Psr\Log\LoggerTrait apenas requer que você implemente genericamente o método log. Observe que desde o tratamento disso não pode ser implementado pela interface, nesse caso você tem que implementar LoggerInterface. 
+
+O Psr\Log\NullLogger é providenciado em conjunto com as interfaces. Isso pode ser usado por usuários com interfaces. Isso pode ser usado por usuários de interfaces que providencia como um fall-back  e um black hole implementado se não há um logger que trás isso através deles. Contudo, o log condicional pode ser melhor abordagem se o contexto do dado criado é expansivo. 
+
+O Ps\Log\LoggerAwareTrait marca o que pode ser usado para implementar a interface equivalente facilmente em uma classe. Isso trás acesso a $this->logger. 
+
+A classe Psr\Log\LogLevel segura os contrastes para os 8 levels do log. 
