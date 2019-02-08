@@ -1,0 +1,25 @@
+As palavras chaves são; "deve", "não deve","requeridos","obrigação","recomendação","poder" e "opção" sendo que esse documento está aberto a ser interpretado pelas descrições em RFC 2119.
+
+1 Geral
+
+Essa PSR descreve as especificações para as classes autoloading para os caminhos desse arquivo. Isso é totalmente interpolado, e pode ser usado como elemento adicional para outras especificações de autoloading, incluindo a PSR0. Essa PSR também descreve onde o local dos arquivos que são usados como autoload de acordo com a especificação. 
+
+2 Especificação 
+
+O termo classe faz referência as classes, interfaces, traços e outras estruturas similares. 
+
+Um qualificador tem classe com nome conforme segue; 
+
+     \<NamespaceName>(\<SubNamespaceNames>)*\<ClassName>
+
+Um qualificador total deve ter um nome de Namespace top-level, também saber como um "vendor namespace". 
+
+Um qualificador total tem uma classe que pode ter um ou mais nomes de sub-namespaces. 
+
+Um qualificador total deve ter uma classe terminal. 
+
+Os sublinhados não tem um significado especial para alguma parte de um total qualificador de classes.
+
+Caracteres alfabéticos são total qualificadores para o nome da classe que podem ser combinados no mínusculo em como no maísculo. 
+
+
