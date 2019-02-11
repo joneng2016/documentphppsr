@@ -22,4 +22,14 @@ Os sublinhados não tem um significado especial para alguma parte de um total qu
 
 Caracteres alfabéticos são total qualificadores para o nome da classe que podem ser combinados no mínusculo em como no maísculo. 
 
+Todas as classes devem se referenciadas usando as especificações para estruturas case-sensitive;. 
 
+3 Quando houver o carregamento de um arquivo que corresponde a quantificadores de nome de classes. 
+
+Uma série contígua de um ou mais namespace conduzido e sub-namespace nao inclui o separador do namespace-conduzido, no qualificador inteiro de classe ("um prefixo de namespace") correspondente ao menos de uma "base de diretório". 
+
+O nome do contíguo sub-namespace antes o "namespace prefixo" corresponde ao subdiretório detro de uma "base de diretório", em que o separador de namespace representa o diretório dos separadores. O subdiretório do nome deve ter partida de casos em relação a nomes de sub-namespaces. 
+
+O término do nome da classe corresponde a nome do final do arquivo em .php . O arquivo deve corresponder ao caso de um término de nome de classe.
+
+A implementação do auto-loader não deve lançar uma Exception, não deve levantar erros de algum nível, e não deve retornar valor algum. 
