@@ -33,3 +33,16 @@ O nome do contíguo sub-namespace antes o "namespace prefixo" corresponde ao sub
 O término do nome da classe corresponde a nome do final do arquivo em .php . O arquivo deve corresponder ao caso de um término de nome de classe.
 
 A implementação do auto-loader não deve lançar uma Exception, não deve levantar erros de algum nível, e não deve retornar valor algum. 
+
+
+3 Exemplos 
+
+A tabela abaixo mostra o caminho do arquivo correspondente para um qualificador total de nome de classes, prefixos de namespace e bases de diretório. 
+
+FULLY QUALIFIED CLASS NAME	NAMESPACE PREFIX	BASE DIRECTORY	RESULTING FILE PATH
+\Acme\Log\Writer\File_Writer	Acme\Log\Writer	./acme-log-writer/lib/	./acme-log-writer/lib/File_Writer.php
+\Aura\Web\Response\Status	Aura\Web	/path/to/aura-web/src/	/path/to/aura-web/src/Response/Status.php
+\Symfony\Core\Request	Symfony\Core	./vendor/Symfony/Core/	./vendor/Symfony/Core/Request.php
+\Zend\Acl	Zend	/usr/includes/Zend/	/usr/includes/Zend/Acl.php
+
+
